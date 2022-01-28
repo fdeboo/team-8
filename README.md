@@ -61,11 +61,7 @@ Features to be included:
 
 ![LandingPage]()
 
-![DailySubmission]()
-
-![InfoPage]()
-
-![Footer]()
+![AdvicePage]()
 
 ## Design 
 
@@ -112,7 +108,7 @@ Here describes the main features of the website and what the user can expect whe
 7. [Balsamiq](https://balsamiq.com/)
     * Used to design the wireframes
 
-8. [AMiResponsive](http://ami.responsivedesign.is/)
+8. [AmIResponsive](http://ami.responsivedesign.is/)
     * To generate the image at the beginning of the README
 
 9. [TinyPNG](https://tinypng.com/)
