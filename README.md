@@ -1,7 +1,16 @@
 # Workle
 
 [Link to Live Site Here]()
-  
+
+The purpose of Workle is to allow users to track their day to day emotions and for them to visually see how they feel over a period of time. It is a tool which users can use to help track and manage stress ....
+
+Workle is a site where users can go in order to track their emotions on a daily basis. Everyday users are able to chose a colour which represents their overall emotion/feeling for the day (e.g. Green = Happy / Red = Angry) and add a comment describing how their day was and any potential reasons for feeling this way.
+
+By entering how they feel every day users are able to visually see a grid displaying all prior days and how they felt. Over time this grid will build out and be a visual represntation of the users day to day emotions helping them to monitor stress levels and overall mantal wellbeing. 
+
+And example of how the grid will look after serveral uses can be seen below:
+
+![DemoOuput](assets/images/Example.png)
 
 ---
 ![AmIResponsive]()
@@ -77,7 +86,7 @@ Here describes the main features of the website and what the user can expect whe
 
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - JavaScript is a scripting language that allows you to implement complex features on web pages.
 
-- We used GitHub [Project Board]() to keep track of all the tasks necessary in order to build this application
+- We used GitHub [Project Board](https://github.com/RiyadhKh4n/team-8/projects/2) to keep track of all the tasks necessary in order to build this application
 
 ## Frameworks, Libraries & Programs Used:
 
