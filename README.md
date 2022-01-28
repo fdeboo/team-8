@@ -8,24 +8,28 @@ Workle is a site where users can go in order to track their emotions on a daily 
 
 By entering how they feel every day users are able to visually see a grid displaying all prior days and how they felt. Over time this grid will build out and be a visual represntation of the users day to day emotions helping them to monitor stress levels and overall mantal wellbeing. 
 
+Workle also has a page dedicated to explaining and helping users understand different feelings (e.g. anxiety, depression and stress) and provides useful resources which they can use to help deal with them. 
+
 And example of how the grid will look after serveral uses can be seen below:
 
 ![DemoOuput](assets/images/Example.png)
 
 ---
+
 ![AmIResponsive]()
+
 ---
 
 # User Experience (UX) 
 
 * ## Vision
-        
+    The vision for Workle is to be an application which users use daily helping them to understand and visual their mental wellbeing over a period of time. 
 
 * ## Aims
-    
+    To provide users an application they can use in order to help track and manage their emotions with the aim to help make users aware of how they feel and allow them to implement solutions to improve their overall wellbeing.
 
 * ## Target Audience
-    
+    Workle is for everyone! No matter your age keeping track of your mental wellbeing is vital to a successful and fufilling life, so whether your a teenager dealing with school stress or and adult trying to manage your work/life balance Workle is for you. 
 
 * ## User Stories
 
