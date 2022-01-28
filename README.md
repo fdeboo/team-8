@@ -57,9 +57,6 @@ Features to be included:
 
 * The second page of the site, will be a informative page where users are able to learn more about mental health, how to manage stress and tips on how to avoid burnout. The page will include useful information with the aim to further expand their knowledge on these areas, as well as include links to sites where they can learn more.
 
-* ## Structure 
-    
-
 ### Workle Wireframes:
 
 ![LandingPage]()
