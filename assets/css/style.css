@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+    margin-bottom: 0;
+    width: 100%;
+    background-color: rgba(93, 63, 211, 0.85);
+    border: 0;
+}
+
+.navbar .navbar-brand {
+    font-size: 30px;
+    font-family: 'Concert One', cursive;
+    letter-spacing: 2px;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+
+.nav-item{
+    color:#fff;
+}
