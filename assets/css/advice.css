@@ -1,0 +1,62 @@
+
+/* File path: /workspace/team-8/assets/css/advice.css  */
+
+/* Two fonts  namely Robota Sans and Exo with different weights */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/*----------------------------------------------------------------Color--*/
+
+
+/*--------------------------------------------------------------------- Special paddings/margins/texts */
+
+
+
+/*-------------------------------------------------------------- Heading  */
+
+/*  Set all margins to 0 to begin with setting up our page. */
+
+header {
+    margin: 0;
+}
+
+/* link logo to the images directory and its photo*/
+
+
+/*----------------------------------------------------------------Hover.css--*/
+
+
+
+/*-------------------------------------------------------------- Footer  */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer ul{
+    margin:0;
+    list-style-type: none;
+}
+
+
+
+
+/*--------------------------------------------------------------  Mindfulness */
+
+
+
+/*--------------------------------------------------------------    Stess */
+
+
+
+/*--------------------------------------------------------------   Burnout */
+
+
+
+/*--------------------------------------------------------------------  */
+
+
+/* -----------------------------------------------------------------  */
+
+
+/* -----------------------------------------------------------Media Queries */
