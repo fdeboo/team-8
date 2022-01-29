@@ -54,17 +54,57 @@ body {
 }
 
 .btn--nav{
-    color: rgba(93, 63, 211, 0.85);
-    background: white;
-    border-color: black;
+    color: white;
+    background: #66BAA8;
+    border-color: #66BAA8;
     border-width: 4px;
+}
+
+.btn--jumbo{
+    color: white;
+    background-color:rgba(93, 63, 211, 1);
+    border-color: rgba(93, 63, 211, 1);
+    border-width: 4px;
+}
+
+.btn--jumbo:hover,
+.btn--jumbo:active,
+.btn--jumbo:focus,
+.btn--jumbo:active:focus{
+    color: white;
+    background-color:rgba(93, 63, 211, 1);
+    border-color: white;
 }
 
 .btn--nav:hover,
 .btn--nav:active,
 .btn--nav:focus,
 .btn--nav:active:focus{
-    background-color: rgba(93, 63, 211, 0.85);
+    background-color: #66BAA8;
     border-color: white;
     color:white;
+}
+
+/* Jumbotron */
+.jumbotron{
+    background-color:rgba(102, 186, 168, 0.5);
+    padding: 2rem 2rem;
+}
+
+.what-is-workle,
+.who-is-workle-for{
+    text-align: center;
+    font-size: 38px;
+    padding-bottom: 0.75rem;
+}
+
+.workle-description{
+    text-align: justify;
+    font-size: 18px;
+    padding-bottom: 0.75rem;
+}
+
+.workle-description-centre{
+    text-align: center;
+    font-size: 18px;
 }
