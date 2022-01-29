@@ -87,15 +87,17 @@ body {
 
 /* Jumbotron */
 .jumbotron{
-    background-color:rgba(102, 186, 168, 0.5);
+    background-color:lightgray;
     padding: 2rem 2rem;
+    margin-bottom: 0;
 }
 
 .what-is-workle,
 .who-is-workle-for{
     text-align: center;
-    font-size: 38px;
+    font-size: 30px;
     padding-bottom: 0.75rem;
+    font-weight: bold;
 }
 
 .workle-description{
@@ -107,4 +109,60 @@ body {
 .workle-description-centre{
     text-align: center;
     font-size: 18px;
+}
+
+/* Add Entry */
+.add-entry-section{
+    padding: 1rem 2rem;
+    background-color: rgba(93, 63, 211, 0.75);
+}
+
+.how-are-you-feeling,
+.comment-about-day{
+    color:white;
+    font-weight: bold;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 30px;
+}
+
+.emotion-buttons button{
+    margin: 3px 2px;
+}
+
+.emotions{
+    height:40px;
+    color:white;
+    font-weight: bold;
+}
+
+button .emotion{
+    width: 20rem;
+}
+
+/* Emotion Buttons */
+.btn-angry{
+    background-color: red;
+    
+}
+
+.btn-stressed{
+    background-color:darkgray;
+}
+
+.btn-sad{
+    background-color: blue;
+}
+
+.btn-optimistic{
+    background-color: orange;
+}
+
+.btn-calm{
+    background-color: violet;
+}
+
+.btn-happy{
+    background-color: green;
 }

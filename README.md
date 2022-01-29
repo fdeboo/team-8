@@ -47,15 +47,15 @@ And example of how the grid will look after serveral uses can be seen below:
 
 * ## Development Method 
 
-When creating Workle we took an [Agile](https://en.wikipedia.org/wiki/Agile_software_development) Approach. That is, taking an iterative approach to software development helping us to deliver value to the user faster. As a team we focused on collaboration, less documentation, continous delivery and adaptive planning in order to ensure all User Stories were met.
+    When creating Workle we took an [Agile](https://en.wikipedia.org/wiki/Agile_software_development) Approach. That is, taking an iterative approach to software development helping us to deliver value to the user faster. As a team we focused on collaboration, less documentation, continous delivery and adaptive planning in order to ensure all User Stories were met.
 
 * ## Scope
 
-Features to be included:
+    Features to be included:
 
-* The landing page of Workle is where users are able to add their daily entries to their emotion grid as which includes adding the colour as well as the comment. Once this is done, users can submit this entry and their data will be added to the grid allowing them to see an up-to-date version.
+    * The landing page of Workle is where users are able to add their daily entries to their emotion grid as which includes adding the colour as well as the comment. Once this is done, users can submit this entry and their data will be added to the grid allowing them to see an up-to-date version.
 
-* The second page of the site, will be a informative page where users are able to learn more about mental health, how to manage stress and tips on how to avoid burnout. The page will include useful information with the aim to further expand their knowledge on these areas, as well as include links to sites where they can learn more.
+    * The second page of the site, will be a informative page where users are able to learn more about mental health, how to manage stress and tips on how to avoid burnout. The page will include useful information with the aim to further expand their knowledge on these areas, as well as include links to sites where they can learn more.
 
 ### Workle Wireframes:
 
