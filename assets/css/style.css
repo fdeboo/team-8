@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -8,19 +10,66 @@ body {
     margin-bottom: 0;
     width: 100%;
     background-color: rgba(93, 63, 211, 0.85);
+}
+
+.navbar .navbar-toggler {
     border: 0;
 }
 
 .navbar .navbar-brand {
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Concert One', cursive;
     letter-spacing: 2px;
+    padding-left: 25px;
 }
 
 .navbar .navbar-nav a {
     font-weight: bold;
 }
 
+.navbar-collapse{
+    margin-top: 10px;
+    /* padding-left: 15px; */
+}
+
 .nav-item{
     color:#fff;
+    font-size: 26px;
+}
+
+.navbar-text{
+    color: rgba(255,255,255,1);
+    display: inline-block;
+    padding-right: 14px;
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 16px;
+}
+
+.signup-text{
+
+}
+
+/* Buttons */
+.btn--cta{
+    font-weight: bold;
+    border-radius: 23px;
+    width: 180px;
+    height: 50px;
+}
+
+.btn--nav{
+    color: rgba(93, 63, 211, 0.85);
+    background: white;
+    border-color: black;
+    border-width: 4px;
+}
+
+.btn--nav:hover,
+.btn--nav:active,
+.btn--nav:focus,
+.btn--nav:active:focus{
+    background-color: rgba(93, 63, 211, 0.85);
+    border-color: white;
+    color:white;
 }
