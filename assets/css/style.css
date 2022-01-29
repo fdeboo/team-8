@@ -231,7 +231,7 @@ input:focus{
     cursor: pointer;
 }
 
-span{
+.extra-info{
     margin-top:20px;
     font-size:14px;
     line-height: 1.5em;
