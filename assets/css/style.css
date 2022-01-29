@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=M+PLUS+Rounded+1c:wght@400&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -58,6 +58,7 @@ body {
     background: #66BAA8;
     border-color: #66BAA8;
     border-width: 4px;
+    padding-top:10px;
 }
 
 .btn--jumbo{
@@ -65,6 +66,21 @@ body {
     background-color:rgba(93, 63, 211, 1);
     border-color: rgba(93, 63, 211, 1);
     border-width: 4px;
+    padding-top: 10px;
+}
+
+.btn--sub{
+    border-width: 4px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 75px;
+    width: 150px;
+    color: white;
+    background: #66BAA8;
+    border-color: #66BAA8;
+    border-radius: 20px;
+    margin-top: 10px;
 }
 
 .btn--jumbo:hover,
@@ -85,6 +101,149 @@ body {
     color:white;
 }
 
+.btn--sub:hover,
+.btn--sub:active,
+.btn--sub:focus,
+.btn--sub:active:focus{
+    background-color: #66BAA8;
+    border-color: white;
+    color:white;
+}
+
+/* Sign In / Up */
+.h1-login{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.enter-details-p{
+    line-height: 1.5em;
+}
+
+.overlay{
+    z-index: 1;
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background: rgba(0,0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition: opacity 500ms;
+    opacity: 0;
+    visibility: hidden; */
+}
+
+.overlay:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+.wrapper{
+    position:relative;
+    width:50%;
+    min-height:400px;
+    display:flex;
+}
+
+.close{
+    position: absolute;
+    right: 20px;
+    top:0;
+    font-size: 30px;
+    color: rgba(93, 63, 211, 1);
+    font-weight: bold;
+    transition: all 200ms;
+}
+
+.column{
+    width:50%;
+    padding:35px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details{
+    background: rgba(93, 63, 211, 1);
+}
+
+.details h1{
+    color: white;
+}
+
+.signin, .singup{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+input{
+    background: #eee;
+    border:none;
+    padding: 12px 15px;
+    border: 2px;
+    margin: 8px 0;
+    width: 100%;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: rgba(93, 63, 211, 1);
+    font-size: inherit;
+}
+
+
+input:focus{
+    outline-color: #fff;
+}
+
+.form-submit{
+    background: #66BAA8;
+    border:none;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 10px;
+    padding: 12px 14px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: tranform 80ms ease-in;
+}
+
+.form-submit:hover{
+    background-color: lightgray;
+    transform: scale(1.05);
+}
+
+.signup .form-submit{
+    margin-top: 15px;
+}
+
+#signin, #signup{
+    background: none;
+    border:none;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+span{
+    margin-top:20px;
+    font-size:14px;
+    line-height: 1.5em;
+    color: white;
+}
+
+.content{
+    background: lightgray;
+    color:rgba(93, 63, 211, 1);
+    text-align: center;
+}
+
 /* Jumbotron */
 .jumbotron{
     background-color:lightgray;
@@ -94,8 +253,9 @@ body {
 
 .what-is-workle,
 .who-is-workle-for{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 34px;
     padding-bottom: 0.75rem;
     font-weight: bold;
 }
@@ -119,32 +279,34 @@ body {
 
 .how-are-you-feeling,
 .comment-about-day{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     color:white;
     font-weight: bold;
     margin-top:1rem;
     margin-bottom: 1rem;
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
+}
+
+.emotion-buttons{
+    margin: 0 2rem;
 }
 
 .emotion-buttons button{
-    margin: 3px 2px;
+    margin: 5px 5px;
 }
 
 .emotions{
-    height:40px;
+    height:60px;
     color:white;
+    font-size: 20px;
     font-weight: bold;
 }
 
-button .emotion{
-    width: 20rem;
-}
 
 /* Emotion Buttons */
 .btn-angry{
     background-color: red;
-    
 }
 
 .btn-stressed{
@@ -165,4 +327,61 @@ button .emotion{
 
 .btn-happy{
     background-color: green;
+}
+
+.comment-about-day{
+    margin-top: 2rem;
+}
+
+.input-group{
+    padding: 0 1.5rem;
+}
+
+/* Grid */
+/* 
+.grid-container-div{
+    
+}
+
+.container {
+    height: 20vh;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  
+.cell {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: red;
+    border: 2px solid white;
+  }
+  */
+
+  
+@media only screen and (max-width: 900px){
+    .wrapper{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .wrapper{
+        width: 80%;
+        flex-direction: column-reverse;
+    }
+
+    .column{
+        width:100%;
+    }
+
+    .close{
+        top: 0;
+        right: 10px;
+        margin:0;
+    }
+
 }
