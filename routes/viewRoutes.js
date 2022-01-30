@@ -4,13 +4,7 @@ const viewController = require("../controllers/viewController");
 
 const router = express.Router();
 
-// router.get("/", (req, res) => {
-//   res.sendFile(path.join(__dirname, "/index.html"));
-// });
-
-router.get("/", authController.protect, viewController.userhome);
-router.get("/", viewController.home);
-// router.get("/login", authController.isLoggedIn, viewsController.getLoginForm);
-// router.get("/me", authController.protect, viewsController.getAccount);
+router.get("/", authController.isLoggedIn, viewController.getOverview);
+router.get("/me", authController.protect, viewController.userhome);
 
 module.exports = router;

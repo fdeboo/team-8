@@ -90,10 +90,9 @@ exports.protect = catchAsync(async (req, res, next) => {
     req.headers.authorization.startsWith("Bearer")
   ) {
     token = req.headers.authorization.split(" ")[1];
+  } else if (req.cookies.jwt) {
+    token = req.cookies.jwt;
   }
-  // } else if (req.cookies.jwt) {
-  //   token = req.cookies.jwt;
-  // }
 
   if (!token) {
     const err = new Error(
@@ -135,3 +134,35 @@ exports.protect = catchAsync(async (req, res, next) => {
   res.locals.user = currentUser;
   next();
 });
+
+exports.isLoggedIn = async (req, res, next) => {
+  console.log(req.cookies.jwt);
+  if (req.cookies.jwt) {
+    try {
+      const decodedPayload = await promisify(jwt.verify)(
+        req.cookies.jwt,
+        process.env.JWT_SECRET
+      );
+
+      const currentUser = await User.findById(decodedPayload.id);
+      if (!currentUser) {
+        return next();
+      }
+
+      const passwordChangedAfter = await currentUser.changedPasswordAfter(
+        decodedPayload.ia
+      );
+
+      if (passwordChangedAfter) {
+        return next();
+      }
+
+      res.locals.user = currentUser;
+      console.log("HERE");
+      res.redirect("/me");
+    } catch (err) {
+      return next();
+    }
+  }
+  next();
+};
