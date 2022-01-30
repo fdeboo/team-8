@@ -311,30 +311,29 @@ body {
     height: 4rem;
 }
 
+@media (min-width: 320px) {
+    .cards { grid-template-columns: repeat(7, 1fr); }
+  }
+  
+@media only screen and (max-width: 480px){
+    .wrapper{
+          width: 80%;
+          flex-direction: column-reverse;
+    }
+  
+    .column{
+          width:100%;
+    }
+  
+    .close{
+          top: 0;
+          right: 10px;
+          margin:0;
+    }
+}
+
 @media only screen and (max-width: 900px){
     .wrapper{
         width: 80%;
     }
 }
-
-@media only screen and (max-width: 480px){
-    .wrapper{
-        width: 80%;
-        flex-direction: column-reverse;
-    }
-
-    .column{
-        width:100%;
-    }
-
-    .close{
-        top: 0;
-        right: 10px;
-        margin:0;
-    }
-
-}
-
-@media (min-width: 320px) {
-    .cards { grid-template-columns: repeat(7, 1fr); }
-  }
