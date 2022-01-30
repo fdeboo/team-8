@@ -339,6 +339,10 @@ input:focus{
     padding: 0 1.5rem;
 }
 
+.submit-button-div{
+    text-align: center;
+}
+
 /* Grid */
 /* 
 .grid-container-div{
