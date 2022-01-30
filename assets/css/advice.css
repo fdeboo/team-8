@@ -133,6 +133,9 @@ ul li a{
 /*--------------------------------------------------------------  Mindfulness */
 
 
+    .mindfulness h2{
+        border: 1px solid black;
+    }
 
 /*--------------------------------------------------------------    Stess */
 
@@ -149,3 +152,25 @@ ul li a{
 
 
 /* -----------------------------------------------------------Media Queries */
+@media  screen and (min-width:780px) {
+    .two-col-block{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    
+    .two-col-width{
+        width:400px;
+        }
+
+    .two-col-width h2{
+        height: 60px;
+    }    
+
+    #center{
+        display: flex;
+    justify-content: center;
+    }
+    
+}

@@ -2,34 +2,29 @@
 
 <!DOCTYPE html>
 <html lang="en">
+    <!----------------------------------------------------------------------HEAD Element- Same on all pages-->
 
-<!----------------------------------------------------------------------HEAD Element- Same on all pages-->
+    <head>
+        <!--The meta tags is going to be same on all pages 💡💡💡 We may need to add other meta tags.-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="Description" content="Enter your description here" />
 
-<head>
+        <!--link the HTML to  the Bootstarp,fontawesome and our custome css style  💡💡💡 We may need to add other links.-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/advice.css" type="text/css" />
 
-    <!--The meta tags is going to be same on all pages 💡💡💡 We may need to add other meta tags.-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here">
+        <!-- Page name, which appears on the browser tab.-->
+        <title>Workle</title>
+    </head>
 
-    <!--link the HTML to  the Bootstarp,fontawesome and our custome css style  💡💡💡 We may need to add other links.-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
-        type="text/css">
-    <link rel="stylesheet" href="assets/css/advice.css" type="text/css">
+    <!---------------------------------------------------------------Body element : Including header, section and the footer-->
 
-    <!-- Page name, which appears on the browser tab.-->
-    <title>Workle</title>
-
-</head>
-
-<!---------------------------------------------------------------Body element : Including header, section and the footer-->
-
-<body>
-
-    <!-------------- The header is going to be the same across each page -----------------
+    <body>
+        <!-------------- The header is going to be the same across each page -----------------
     <header>
         <div class="row no-gutters">
 
@@ -59,260 +54,214 @@
 
     </header>
 -->
-    <header>
-        <!--Nav-->
-        <nav class="navbar navbar-dark navbar-expand-sm">
-            <a href="/" class="navbar-brand">
-                Workle</a>
+        <header>
+            <!--Nav-->
+            <nav class="navbar navbar-dark navbar-expand-sm">
+                <a href="/" class="navbar-brand"> Workle</a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="advice.html">Advice</a>
-                    </li>
-                    <li class="nav-item mr-2 d-block d-sm-none">
-                        <a class="nav-link" href="#popup">Sign In / Sign Up</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="secondary-nav-div d-none d-md-block">
-                <p class="navbar-text d-md-none d-lg-inline">
-                    <i>Track and Manage Your Feelings</i>
-                </p>
-                <a class="btn btn--cta btn--nav" href="#popup">Sign In / Sign Up</a>
-            </div>
-        </nav>
-        <!-- /.nav-->
-    </header>
-
-    <!----------------------------------------------------------------------           The section will contain unique content for advice.html -------------->
-
-    <section class="content">
-        <section class="section-topic">
-            
-                <div id="">
-                    <h2 class='section-heading'>Getting Started with Mindfulness</h2>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="advice.html">Advice</a>
+                        </li>
+                        <li class="nav-item mr-2 d-block d-sm-none">
+                            <a class="nav-link" href="#popup">Sign In / Sign Up</a>
+                        </li>
+                    </ul>
                 </div>
-            
-
-
-
-            <div id="">
-                <div class="left-about-heading">
-                    <h2><i class="fas fa-brain"></i>What is Mindfulness?</h2>
-                    <hr>
-                    <p>
-                        Professor Mark Williams, former director of the Oxford Mindfulness Centre, says that mindfulness
-                        means knowing directly what is going on inside and outside ourselves, moment by moment.
-
-                        "It's easy to stop noticing the world around us. It's also easy to lose touch with the way our
-                        bodies are feeling and to end up living 'in our heads' – caught up in our thoughts without
-                        stopping to notice how those thoughts are driving our emotions and behaviour," he says.
-
-                        "An important part of mindfulness is reconnecting with our bodies and the sensations they
-                        experience. This means waking up to the sights, sounds, smells and tastes of the present moment.
-                        That might be something as simple as the feel of a banister as we walk upstairs.
-
-                        "Another important part of mindfulness is an awareness of our thoughts and feelings as they
-                        happen moment to moment.
-
-                        "It's about allowing ourselves to see the present moment clearly. When we do that, it can
-                        positively change the way we see ourselves and our lives."
+                <div class="secondary-nav-div d-none d-md-block">
+                    <p class="navbar-text d-md-none d-lg-inline">
+                        <i>Track and Manage Your Feelings</i>
                     </p>
+                    <a class="btn btn--cta btn--nav" href="#popup">Sign In / Sign Up</a>
                 </div>
-                <div class="right-about-heading">
-                    <h2><i class="fas fa-laptop-medical"></i>
-                        The Basics of Mindfulness Practice
-                    </h2>
-                    <hr>
-                    <p> As well as practising mindfulness in daily life, it can be helpful to set aside time for a more
-                        formal mindfulness practice.
+            </nav>
+            <!-- /.nav-->
+        </header>
 
-                        Mindfulness meditation involves sitting silently and paying attention to thoughts, sounds, the
-                        sensations of breathing or parts of the body, bringing your attention back whenever the mind
-                        starts to wander.
+        <!----------------------------------------------------------------------           The section will contain unique content for advice.html -------------->
 
-                        Yoga and tai-chi can also help with developing awareness of your breathing.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="section-topic">
-            
+        <section class="content">
+            <section class="section-topic">
                 <div id="">
-                    <!--credit https://www.mentalhealth.org.uk/a-to-z/s/stress#:~:text=Stress%20is%20the%20feeling%20of,with%20mental%20or%20emotional%20pressure-->
-                    <h2 class='section-heading'>Stress</h2>
+                    <h2 class="section-heading">Getting Started with Mindfulness</h2>
                 </div>
-            
 
-<div>
-            <div class="left-about-heading">
-                <h2><i class="fas fa-laptop-medical"></i>What is stress?</h2>
-                <hr>
-                <p>
-                    Stress is the feeling of being overwhelmed or unable to cope with mental or emotional
-                    pressure. It is our body's response to pressure. When we encounter stress, our body produces
-                    stress hormones that trigger a fight or flight response and activate our immune system.
-                    Sometimes, this stress response can be useful: it can help us push through fear or pain.
-                    However, too much stress can cause negative effects. It can leave us in a permanent stage of
-                    fight or flight, leaving us overwhelmed or unable to cope. Long term, this can affect our
-                    physical and mental health.
-                </p>
-            </div>
-            <div class="right-about-heading">
-                <!--credithttps://www.helpguide.org/articles/stress/stress-symptoms-signs-and-causes.htm#:~:text=Causes%20of%20stress,on%20you%20can%20be%20stressful.-->
-                <h2> <i class="fas fa-laptop-medical"></i>What makes us stressed?</h2>
-                <hr>
-                <p>
-                    Anything that puts high demands on you can be stressful. Stress can also be internal or
-                    self-generated but often caused by external factors. Work related stress is an unfortunae symptom of
-                    many modern working environments.While some workplace stress is normal, excessive stress can
-                    interfere with your productivity and performance, impact your physical and emotional health, and
-                    affect your relationships and home life and lead to <a href="#burnout-section">burnout</a>. It can
-                    even determine the difference between success and
-                    failure on the job. Whatever your ambitions or work demands, there are steps you can take to protect
-                    yourself from the damaging effects of stress, improve your job satisfaction, and bolster your
-                    well-being in and out of the workplace.
-                </p>
-            </div>
-            </div>
-
-            <div id="center">
-                <div id="center-container">
-                    <div id="center-table">
-                        <h2> <i class="fas fa-laptop-medical"></i>What are the signs of stress?</h2>
-                        <hr>
+                <div class="two-col-block">
+                    <div class="two-col-width">
+                        <h2><i class="fas fa-brain"></i>What is Mindfulness?</h2>
+                        <hr />
                         <p>
-                            Stress can manisfest in different ways:
-                            <br>
-                            You may feel:
-                        <ul>
-                            <li>anxious</li>
-                            <li>angry or agressive</li>
-                            <li>frustrated</li>
-                            <li>sad</li>
-                        </ul>
-                        You may experience:
-                        <ul>
-                            <li>headaches</li>
-                            <li>nausea</li>
-                            <li>shallow breathing or hyperventilation</li>
-                            <li>heart palpatations</li>
-                        </ul>
-                        You may behave differently. For instance, you may:
-                        <ul>
-                            <li>withdraw from other people</li>
-                            <li>be tearful</li>
-                            <li>have problems getting to sleep or staying asleep</li>
-                            <li>smoke, drink alcohol or take drugs more than usual.</li>
-                        </ul>
-
+                            Professor Mark Williams, former director of the Oxford Mindfulness Centre, says that mindfulness means knowing directly what is going on inside and outside ourselves, moment by moment. "It's easy to stop noticing
+                            the world around us. It's also easy to lose touch with the way our bodies are feeling and to end up living 'in our heads' – caught up in our thoughts without stopping to notice how those thoughts are driving our
+                            emotions and behaviour," he says. "An important part of mindfulness is reconnecting with our bodies and the sensations they experience. This means waking up to the sights, sounds, smells and tastes of the present
+                            moment. That might be something as simple as the feel of a banister as we walk upstairs. "Another important part of mindfulness is an awareness of our thoughts and feelings as they happen moment to moment. "It's
+                            about allowing ourselves to see the present moment clearly. When we do that, it can positively change the way we see ourselves and our lives."
+                        </p>
+                    </div>
+                    <div class="two-col-width">
+                        <h2>
+                            <i class="fas fa-laptop-medical"></i>
+                            The Basics of Mindfulness Practice
+                        </h2>
+                        <hr />
+                        <p>
+                            As well as practising mindfulness in daily life, it can be helpful to set aside time for a more formal mindfulness practice. Mindfulness meditation involves sitting silently and paying attention to thoughts,
+                            sounds, the sensations of breathing or parts of the body, bringing your attention back whenever the mind starts to wander. Yoga and tai-chi can also help with developing awareness of your breathing.
                         </p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section class="section-topic">
+                <div id="">
+                    <!--credit https://www.mentalhealth.org.uk/a-to-z/s/stress#:~:text=Stress%20is%20the%20feeling%20of,with%20mental%20or%20emotional%20pressure-->
+                    <h2 class="section-heading">Stress</h2>
+                </div>
 
-        <section class="section-topic">
-            <div id="burnout-section>
-                <div class="">
+                <div class="two-col-block">
+                    <div class="two-col-width">
+                        <h2><i class="fas fa-laptop-medical"></i>What is stress?</h2>
+                        <hr />
+                        <p>
+                            Stress is the feeling of being overwhelmed or unable to cope with mental or emotional pressure. It is our body's response to pressure. When we encounter stress, our body produces stress hormones that trigger a
+                            fight or flight response and activate our immune system. Sometimes, this stress response can be useful: it can help us push through fear or pain. However, too much stress can cause negative effects. It can leave
+                            us in a permanent stage of fight or flight, leaving us overwhelmed or unable to cope. Long term, this can affect our physical and mental health.
+                        </p>
+                    </div>
+                    <div class="two-col-width">
+                        <!--credithttps://www.helpguide.org/articles/stress/stress-symptoms-signs-and-causes.htm#:~:text=Causes%20of%20stress,on%20you%20can%20be%20stressful.-->
+                        <h2><i class="fas fa-laptop-medical"></i>What makes us stressed?</h2>
+                        <hr />
+                        <p>
+                            Anything that puts high demands on you can be stressful. Stress can also be internal or self-generated but often caused by external factors. Work related stress is an unfortunae symptom of many modern working
+                            environments.While some workplace stress is normal, excessive stress can interfere with your productivity and performance, impact your physical and emotional health, and affect your relationships and home life
+                            and lead to <a href="#burnout-section">burnout</a>. It can even determine the difference between success and failure on the job. Whatever your ambitions or work demands, there are steps you can take to protect
+                            yourself from the damaging effects of stress, improve your job satisfaction, and bolster your well-being in and out of the workplace.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="center">
+                    <div id="center-container">
+                        <div id="center-table">
+                            <h2><i class="fas fa-laptop-medical"></i>What are the signs of stress?</h2>
+                            <hr />
+                            <p>
+                                Stress can manisfest in different ways:
+                                <br />
+                                You may feel:
+                            </p>
+
+                            <ul>
+                                <li>anxious</li>
+                                <li>angry or agressive</li>
+                                <li>frustrated</li>
+                                <li>sad</li>
+                            </ul>
+                            You may experience:
+                            <ul>
+                                <li>headaches</li>
+                                <li>nausea</li>
+                                <li>shallow breathing or hyperventilation</li>
+                                <li>heart palpatations</li>
+                            </ul>
+                            You may behave differently. For instance, you may:
+                            <ul>
+                                <li>withdraw from other people</li>
+                                <li>be tearful</li>
+                                <li>have problems getting to sleep or staying asleep</li>
+                                <li>smoke, drink alcohol or take drugs more than usual.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-topic">
+                <div id="burnout-section">
+                <div>
                     <!--https://inside.ewu.edu/calelearning/psychological-skills/preventing-burnout/
                     &https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/burnout/art-20046642#:~:text=Job%20burnout%20is%20a%20special,as%20depression%2C%20are%20behind%20burnout.-->
-                    <h2 class='section-heading'>Preventing Burnout</h2>
+                    <h2 class="section-heading">Preventing Burnout</h2>
                 </div>
-            
 
+                <div class="two-col-block">
+                    <div class="two-col-width">
+                        <h2><i class="fas fa-laptop-medical"></i>What is Burnout?</h2>
+                        <hr />
+                        <p>
+                            Burnout is characterized by the triad of emotional exhaustion, depersonalization, and a decreased sense of accomplishment in one’s occupation. Job burnout is a special type of work-related stress — a state of
+                            physical or emotional exhaustion that also involves a sense of reduced accomplishment and loss of personal identity.
+                        </p>
+                    </div>
+                    <div class="two-col-width">
+                        <h2>
+                            <i class="fas fa-laptop-medical"> </i>
+                            Signs of Job Burnout
+                        </h2>
+                        <hr />
 
-            
-                    <div class=" left-about-heading">
-                <h2><i class="fas fa-laptop-medical"></i>What is Burnout?</h2>
-                <hr>
-                <p>
-                    Burnout is characterized by the triad of emotional exhaustion, depersonalization, and a
-                    decreased sense of accomplishment in one’s occupation. Job burnout is a special type of
-                    work-related stress — a state of physical or emotional exhaustion that also involves a sense
-                    of reduced accomplishment and loss of personal identity.
-                </p>
-            </div>
-            <div class="right-about-heading">
-                <h2><i class="fas fa-laptop-medical"> </i>
-                    Signs of Job Burnout
-                </h2>
-                <hr>
+                        <ul>
+                            <li>Becoming cynical or critical at work; becoming irratable or impatient with co-workers.</li>
+                            <li>A lack of energy to lack the energy to be consistently productive</li>
+                            <li>A lack of satisfaction from your achievements or disillusion with your job.</li>
+                            <li>Becoming troubled by unexplained headaches, stomach or bowel problems, or other physical complaints.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="two-col-block">
+                    <div class="two-col-width">
+                        <h2>
+                            <i class="fas fa-laptop-medical"></i>
+                            Stages of Job Burnout
+                        </h2>
+                        <hr />
+                        <ol>
+                            <li>Milder symptoms; mental fatigue, feeling underappreciated & frustrated, feelings of falling behind, dreading the next working day.</li>
+                            <li>Longer lasting symptoms; disillusionment, apathy, a feeling of stasis, psycological symptoms such as depression, substance abuse & suicidal thoughts.</li>
+                            <li>Severe chronic symptoms; psyciatric & physical health disorders, personal consequences- substance abuse, shorter life expectancy, detrimental effects on personal relationships</li>
+                        </ol>
+                    </div>
+                    <div class="two-col-width">
+                        <h2>
+                            <i class="fas fa-laptop-medical"> </i>
+                            Preventing Job Burnout
+                        </h2>
+                        <hr />
+                        <p>
+                            Recognising job burnout is the first step in preventing burnout. Workle allows you to track your mood and provides a visual history of your emotions & feelings of stress. An awareness of negative mood patterns
+                            allows he user to anticipate potential burnout and tackle the problem before it grows out of control.
+                        </p>
 
-                <ul>
-                    <li>Becoming cynical or critical at work; becoming irratable or impatient with co-workers.
-                    </li>
-                    <li>A lack of energy to lack the energy to be consistently productive</li>
-                    <li>A lack of satisfaction from your achievements or disillusion with your job.</li>
-                    <li>Becoming troubled by unexplained headaches, stomach or bowel problems, or other physical
-                        complaints.</li>
-                </ul>
-
-            </div>
-
-            <div class="left-about-heading">
-                <h2><i class="fas fa-laptop-medical"></i>
-                    Stages of Job Burnout
-                </h2>
-                <hr>
-                <ol>
-                    <li>Milder symptoms; mental fatigue, feeling underappreciated & frustrated, feelings of
-                        falling behind, dreading the next working day.</li>
-                    <li>Longer lasting symptoms; disillusionment, apathy, a feeling of stasis, psycological
-                        symptoms such as depression, substance abuse & suicidal thoughts.</li>
-                    <li>Severe chronic symptoms; psyciatric & physical health disorders, personal consequences-
-                        substance abuse, shorter life expectancy, detrimental effects on personal relationships
-                    </li>
-                </ol>
-            </div>
-            <div class="right-about-heading">
-                <h2><i class="fas fa-laptop-medical"> </i>
-                    Preventing Job Burnout
-                </h2>
-                <hr>
-                <p>
-                    Recognising job burnout is the first step in preventing burnout. Workle allows you to track
-                    your mood and provides a visual history of your emotions & feelings of stress. An awareness
-                    of negative mood patterns allows he user to anticipate potential burnout and tackle the
-                    problem before it grows out of control.</p>
-                </p>
-                <p>Workle allows the user to cultivate the ability to self-reflect& complete a periodic
-                    assessment of their mood. This allows them to attend to their own needs, realign their goals
-                    and reevaluate their potentially harmful work, or school, schedules. Of course, basic things
-                    such as a balanced diet, regular exercise, getting enough sleep and mainitaing a healthy
-                    work life balance are all effective methods of preventing burnout in general.</p>
-            </div>
-            
-
-        </section>
+                        <p>
+                            Workle allows the user to cultivate the ability to self-reflect& complete a periodic assessment of their mood. This allows them to attend to their own needs, realign their goals and reevaluate their potentially
+                            harmful work, or school, schedules. Of course, basic things such as a balanced diet, regular exercise, getting enough sleep and mainitaing a healthy work life balance are all effective methods of preventing
+                            burnout in general.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </section>
         <footer>
-            <span class='concert-one'> Workle | All rights reserved © </span>
+            <span class="concert-one"> Workle | All rights reserved © </span>
 
             <div class="footer-links">
                 <ul>
-                    <li><a href="https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/"
-                            target="_blank">Get help with Stress</a></li>
-                    <li><a href="https://www.healthline.com/health/tips-for-identifying-and-preventing-burnout"
-                            target="_blank">Identifying Burnout</a></li>
-                    <li><a href="https://www.samaritans.org/ireland/how-we-can-help/contact-samaritan/"
-                            target="_blank">Contact
-                            Samaritans</a></li>
+                    <li><a href="https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/" target="_blank">Get help with Stress</a></li>
+                    <li><a href="https://www.healthline.com/health/tips-for-identifying-and-preventing-burnout" target="_blank">Identifying Burnout</a></li>
+                    <li><a href="https://www.samaritans.org/ireland/how-we-can-help/contact-samaritan/" target="_blank">Contact Samaritans</a></li>
                 </ul>
             </div>
         </footer>
-
-</body>
-
+    </body>
 </html>
