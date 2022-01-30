@@ -50,6 +50,140 @@ body {
     font-size: 16px;
 }
 
+/* Sign In / Up */
+.h1-login{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.enter-details-p{
+    line-height: 1.5em;
+}
+
+.overlay{
+    z-index: 1;
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background: rgba(0,0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 500ms;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+.wrapper{
+    position:relative;
+    width:50%;
+    min-height:400px;
+    display:flex;
+}
+
+.close{
+    position: absolute;
+    right: 20px;
+    top:0;
+    font-size: 30px;
+    color: rgba(93, 63, 211, 1);
+    font-weight: bold;
+    transition: all 200ms;
+}
+
+.column{
+    width:50%;
+    padding:35px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details{
+    background: rgba(93, 63, 211, 1);
+}
+
+.details h1{
+    color: white;
+}
+
+.signin, .singup{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+input{
+    background: #eee;
+    border:none;
+    padding: 12px 15px;
+    border: 2px;
+    margin: 8px 0;
+    width: 100%;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: rgba(93, 63, 211, 1);
+    font-size: inherit;
+}
+
+
+input:focus{
+    outline-color: #fff;
+}
+
+.form-submit{
+    background: #66BAA8;
+    border:none;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 10px;
+    padding: 12px 14px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: tranform 80ms ease-in;
+}
+
+.form-submit:hover{
+    background-color: lightgray;
+    transform: scale(1.05);
+}
+
+.signup .form-submit{
+    margin-top: 15px;
+}
+
+#signin, #signup{
+    background: none;
+    border:none;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.extra-info{
+    margin-top:20px;
+    font-size:14px;
+    line-height: 1.5em;
+    color: white;
+}
+
+.content{
+    background: lightgray;
+    color:rgba(93, 63, 211, 1);
+    text-align: center;
+}
+
 /* Buttons */
 .btn--cta{
     font-weight: bold;
@@ -63,7 +197,7 @@ body {
     background: #66BAA8;
     border-color: #66BAA8;
     border-width: 4px;
-    padding-top:10px;
+    padding-top:7px;
 }
 
 .btn--jumbo{
@@ -313,13 +447,59 @@ body {
 
 /* Hero */
 
+#hero-outer {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
 
+.hero-inner{
+    height: 100%;
+    margin:3em;
+    background: rgba(93, 63, 211, 0.85);
+}
 
+.why-not-join{
+    padding-top: 1em;
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    color:white;
+}
 
+.overview-pug{
+    padding-top: 1em;
+    color:#fff;
+}
+
+.w-i-w-f-a{
+    color:#fff;
+}
+
+.workle-desc{
+    padding: 15px;
+    color:white;
+    padding-bottom: 50px;
+}
+
+.join-community{
+    text-align: center;
+}
+
+.button-advice{
+    text-align: center;
+}
 
 @media (min-width: 320px) {
     .cards { grid-template-columns: repeat(7, 1fr); }
-  }
+}
+
+@media only screen and (max-width: 320px){
+    .hero-inner{
+        margin: 1.5em;
+    }
+}
   
 @media only screen and (max-width: 480px){
     .wrapper{
