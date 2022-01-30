@@ -29,11 +29,11 @@
 
 <body>
 
-    <!-------------- The header is going to be the same across each page ----------------------->
+    <!-------------- The header is going to be the same across each page -----------------
     <header>
         <div class="row no-gutters">
 
-            <!-- The logo must be a link to the main page. -->
+            -- The logo must be a link to the main page. 
             <a href="index.html" class="col-md-4 logo">
                 <i class="fa fa-brain" aria-hidden="true">Workle</i>
             </a>
@@ -58,20 +58,55 @@
     </header>
 
     </header>
+-->
+    <header>
+        <!--Nav-->
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <a href="/" class="navbar-brand">
+                Workle</a>
 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="advice.html">Advice</a>
+                    </li>
+                    <li class="nav-item mr-2 d-block d-sm-none">
+                        <a class="nav-link" href="#popup">Sign In / Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="secondary-nav-div d-none d-md-block">
+                <p class="navbar-text d-md-none d-lg-inline">
+                    <i>Track and Manage Your Feelings</i>
+                </p>
+                <a class="btn btn--cta btn--nav" href="#popup">Sign In / Sign Up</a>
+            </div>
+        </nav>
+        <!-- /.nav-->
+    </header>
 
     <!----------------------------------------------------------------------           The section will contain unique content for advice.html -------------->
 
-    <section class="">
-        <section id="section-topic">
-            <div id="">
+    <section class="content">
+        <section class="section-topic">
+            
                 <div id="">
-                    <h2>Getting Started with Mindfulness</h2>
+                    <h2 class='section-heading'>Getting Started with Mindfulness</h2>
                 </div>
-            </div>
-        </section>
+            
 
-        <section id="">
+
+
             <div id="">
                 <div class="left-about-heading">
                     <h2><i class="fas fa-brain"></i>What is Mindfulness?</h2>
@@ -111,16 +146,16 @@
                     </p>
                 </div>
             </div>
-
-            <section id="section-topic">
+        </section>
+        <section class="section-topic">
+            
                 <div id="">
-                    <div id="">
-                        <!--credit https://www.mentalhealth.org.uk/a-to-z/s/stress#:~:text=Stress%20is%20the%20feeling%20of,with%20mental%20or%20emotional%20pressure-->
-                        <h2>Stress</h2>
-                    </div>
+                    <!--credit https://www.mentalhealth.org.uk/a-to-z/s/stress#:~:text=Stress%20is%20the%20feeling%20of,with%20mental%20or%20emotional%20pressure-->
+                    <h2 class='section-heading'>Stress</h2>
                 </div>
-            </section>
+            
 
+<div>
             <div class="left-about-heading">
                 <h2><i class="fas fa-laptop-medical"></i>What is stress?</h2>
                 <hr>
@@ -188,80 +223,82 @@
             </div>
         </section>
 
-        <section id="section-topic">
-            <div id="">
+        <section class="section-topic">
+            <div id="burnout-section>
                 <div class="">
                     <!--https://inside.ewu.edu/calelearning/psychological-skills/preventing-burnout/
                     &https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/burnout/art-20046642#:~:text=Job%20burnout%20is%20a%20special,as%20depression%2C%20are%20behind%20burnout.-->
-                    <h2>Preventing Burnout</h2>
+                    <h2 class='section-heading'>Preventing Burnout</h2>
                 </div>
+            
+
+
+            
+                    <div class=" left-about-heading">
+                <h2><i class="fas fa-laptop-medical"></i>What is Burnout?</h2>
+                <hr>
+                <p>
+                    Burnout is characterized by the triad of emotional exhaustion, depersonalization, and a
+                    decreased sense of accomplishment in one’s occupation. Job burnout is a special type of
+                    work-related stress — a state of physical or emotional exhaustion that also involves a sense
+                    of reduced accomplishment and loss of personal identity.
+                </p>
+            </div>
+            <div class="right-about-heading">
+                <h2><i class="fas fa-laptop-medical"> </i>
+                    Signs of Job Burnout
+                </h2>
+                <hr>
+
+                <ul>
+                    <li>Becoming cynical or critical at work; becoming irratable or impatient with co-workers.
+                    </li>
+                    <li>A lack of energy to lack the energy to be consistently productive</li>
+                    <li>A lack of satisfaction from your achievements or disillusion with your job.</li>
+                    <li>Becoming troubled by unexplained headaches, stomach or bowel problems, or other physical
+                        complaints.</li>
+                </ul>
+
             </div>
 
-            <section id="burnout-section">
-                <div id="">
-                    <div class="left-about-heading">
-                        <h2><i class="fas fa-laptop-medical"></i>What is Burnout?</h2>
-                        <hr>
-                        <p>
-                            Burnout is characterized by the triad of emotional exhaustion, depersonalization, and a
-                            decreased sense of accomplishment in one’s occupation. Job burnout is a special type of
-                            work-related stress — a state of physical or emotional exhaustion that also involves a sense
-                            of reduced accomplishment and loss of personal identity.
-                        </p>
-                    </div>
-                    <div class="right-about-heading">
-                        <h2><i class="fas fa-laptop-medical"> Signs of Job Burnout</i>
-                        </h2>
-                        <hr>
+            <div class="left-about-heading">
+                <h2><i class="fas fa-laptop-medical"></i>
+                    Stages of Job Burnout
+                </h2>
+                <hr>
+                <ol>
+                    <li>Milder symptoms; mental fatigue, feeling underappreciated & frustrated, feelings of
+                        falling behind, dreading the next working day.</li>
+                    <li>Longer lasting symptoms; disillusionment, apathy, a feeling of stasis, psycological
+                        symptoms such as depression, substance abuse & suicidal thoughts.</li>
+                    <li>Severe chronic symptoms; psyciatric & physical health disorders, personal consequences-
+                        substance abuse, shorter life expectancy, detrimental effects on personal relationships
+                    </li>
+                </ol>
+            </div>
+            <div class="right-about-heading">
+                <h2><i class="fas fa-laptop-medical"> </i>
+                    Preventing Job Burnout
+                </h2>
+                <hr>
+                <p>
+                    Recognising job burnout is the first step in preventing burnout. Workle allows you to track
+                    your mood and provides a visual history of your emotions & feelings of stress. An awareness
+                    of negative mood patterns allows he user to anticipate potential burnout and tackle the
+                    problem before it grows out of control.</p>
+                </p>
+                <p>Workle allows the user to cultivate the ability to self-reflect& complete a periodic
+                    assessment of their mood. This allows them to attend to their own needs, realign their goals
+                    and reevaluate their potentially harmful work, or school, schedules. Of course, basic things
+                    such as a balanced diet, regular exercise, getting enough sleep and mainitaing a healthy
+                    work life balance are all effective methods of preventing burnout in general.</p>
+            </div>
+            
 
-                        <ul>
-                            <li>Becoming cynical or critical at work; becoming irratable or impatient with co-workers.
-                            </li>
-                            <li>A lack of energy to lack the energy to be consistently productive</li>
-                            <li>A lack of satisfaction from your achievements or disillusion with your job.</li>
-                            <li>Becoming troubled by unexplained headaches, stomach or bowel problems, or other physical
-                                complaints.</li>
-                        </ul>
-
-                    </div>
-
-                    <div class="left-about-heading">
-                        <h2><i class="fas fa-laptop-medical"> Stages of Job Burnout</i>
-
-                        </h2>
-                        <hr>
-                        <ol>
-                            <li>Milder symptoms; mental fatigue, feeling underappreciated & frustrated, feelings of
-                                falling behind, dreading the next working day.</li>
-                            <li>Longer lasting symptoms; disillusionment, apathy, a feeling of stasis, psycological
-                                symptoms such as depression, substance abuse & suicidal thoughts.</li>
-                            <li>Severe chronic symptoms; psyciatric & physical health disorders, personal consequences-
-                                substance abuse, shorter life expectancy, detrimental effects on personal relationships
-                            </li>
-                        </ol>
-                    </div>
-                    <div class="right-about-heading">
-                        <h2><i class="fas fa-laptop-medical"> Preventing Job Burnout</i>
-
-                        </h2>
-                        <hr>
-                        <p>
-                            Recognising job burnout is the first step in preventing burnout. Workle allows you to track
-                            your mood and provides a visual history of your emotions & feelings of stress. An awareness
-                            of negative mood patterns allows he user to anticipate potential burnout and tackle the
-                            problem before it grows out of control.</p>
-                        </p>
-                        <p>Workle allows the user to cultivate the ability to self-reflect& complete a periodic
-                            assessment of their mood. This allows them to attend to their own needs, realign their goals
-                            and reevaluate their potentially harmful work, or school, schedules. Of course, basic things
-                            such as a balanced diet, regular exercise, getting enough sleep and mainitaing a healthy
-                            work life balance are all effective methods of preventing burnout in general.</p>
-                    </div>
-                </div>
-            </section>
+        </section>
         </section>
         <footer>
-            <span> Workle | All rights reserved © </span>
+            <span class='concert-one'> Workle | All rights reserved © </span>
 
             <div class="footer-links">
                 <ul>
