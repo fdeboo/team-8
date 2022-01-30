@@ -8,6 +8,7 @@ exports.getOverview = async (req, res, next) => {
 
 exports.getLoginForm = async (req, res, next) => {
   console.log("LOGIN PLEASE");
+  console.log("HELLO WORLD");
 
   res.status(200).render("login", {});
 };
