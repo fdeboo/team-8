@@ -1,0 +1,38 @@
+{
+  "name": "workle",
+  "version": "1.0.0",
+  "description": "A wellbeing journal to track daily mood levels",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RiyadhKh4n/team-8.git"
+  },
+  "keywords": [
+    "wellbeing",
+    "daily",
+    "mood",
+    "colour"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RiyadhKh4n/team-8/issues"
+  },
+  "homepage": "https://github.com/RiyadhKh4n/team-8#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "express-openid-connect": "^2.5.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.8",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2",
+    "validator": "^13.7.0"
+  }
+}
