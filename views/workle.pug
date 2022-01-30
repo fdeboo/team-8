@@ -2,5 +2,167 @@ extends base
 
 block content
     main.main
-        h1 Welcome Back
-        div.workle Hello
+           nav.navbar.navbar-dark.navbar-expand-sm
+      a.navbar-brand(href='/')
+        | Workle
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href='#')
+              | Home
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='#') Advice
+          li.nav-item.mr-2.d-block.d-sm-none
+            a.nav-link(href='#popup') Sign In / Sign Up
+      .secondary-nav-div.d-none.d-md-block
+        p.navbar-text.d-md-none.d-lg-inline
+          i Track and Manage Your Feelings
+        a.btn.btn--cta.btn--nav(href='#popup') Sign In / Sign Up
+    // /.nav
+    // Login / Signup Page
+    #popup.overlay
+      .wrapper
+        a.close(href='') &times;
+        .column.details
+          .signin
+            h1.h1-login Sign In
+            input(type='emial', placeholder='Username')
+            input(type='password', placeholder='Password')
+            button.form-submit(type='submit') Sign In
+            span.extra-info
+              | You don&apos;t have an account yet?
+              a#signup(href='#') Create it Now!
+          .signup
+            h1.h1-login Sign Up
+            input(type='name', placeholder='Username')
+            input(type='email', placeholder='Email')
+            input(type='password', placeholder='Password')
+            button.form-submit(type='submit') Sign Up
+            span.extra-info
+              | Already have an account?
+              a#signin(href='#') Sign In
+        .column.content
+          .signin
+            h1.h1-login Welcome Back!
+            p.enter-details-p To add your next entry please login with your details
+          .signup
+            h1 Hello, Friend!
+            p.enter-details-p Create an account to begin your journey with Workle
+    // Jumbotron
+    section.jumbotron
+      h2.what-is-workle What is Workle?
+      p.workle-description
+        | Workle is a site where you can track how you feel on a daily basis.
+        | Come back everyday and chose a colour which best represents your overall emotion/feeling for the day
+        | and add a comment describing how your day was and any potential reasons for feeling this way.
+        | By entering how you feel every day you are able to get a visual respresentation.
+        | Over time this grid will build out and allow you to see your day to day emotions helping to monitor stress levels and overall mantal wellbeing.
+        | Workle also has a page dedicated to explaining and helping you understand the complex world of mental wellbeing.
+      h2.who-is-workle-for Who is Workle For?
+      p.workle-description-centre
+        | Workle is for everyone! No matter your age keeping track of your mental wellbeing is vital to a successful and fufilling life,
+        | so whether your a teenager dealing with school stress or and adult trying to manage your work/life balance Workle is for you.
+      section.d-md-none
+        hr.my-4
+        p
+          | So what are you waiting for? Sign Up and start you journey for a more peaceful life now!
+        p.second-signup-button
+          a.btn.btn--cta.btn--jumbo(href='#popup') Sign In / Sign Up
+    // /.jumbotron
+    // Add Entry
+    section.add-entry-section.container-fluid
+      .row
+        .col-12.how-feeling-div
+          h2.how-are-you-feeling How Are You Feeling Today?
+      .row.emotion-buttons
+        button.col-12.btn.btn-angry.emotions(type='radio') Angry
+        button.col-12.btn.btn-stressed.emotions(type='radio') Stressed
+        button.col-12.btn.btn-sad.emotions(type='button') Sad
+        button.col-12.btn.btn-optimistic.emotions(type='button') Optimistic
+        button.col-12.btn.btn-calm.emotions(type='button') Calm
+        button.col-12.btn.btn-happy.emotions(type='button') Happy
+      .row.input-box
+        h2.col-12.comment-about-day Add A Comment About Your Day
+        .input-group.mb-3
+          input.form-control(type='text', placeholder='Comment', aria-label='Comment', aria-describedby='basic-addon1')
+      .row.submit-button-div
+        .col-12
+          input.btn.btn--sub(type='submit', value='Submit')
+    .container
+      .row
+        form#emotion
+          .col-xs-12.col-sm-6.col-md-5
+            h3.text-center How Are You Feeling Today
+            .frb-group
+              .frb.frb-default
+                input#radio-button-0(type='radio', name='radio-button', value='0')
+                label(for='radio-button-0')
+                  span.frb-title Angry
+              .frb.frb-primary
+                input#radio-button-1(type='radio', name='radio-button', value='1')
+                label(for='radio-button-1')
+                  span.frb-title Stressed
+              .frb.frb-success
+                input#radio-button-2(type='radio', name='radio-button', value='2')
+                label(for='radio-button-2')
+                  span.frb-title Sad
+              .frb.frb-info
+                input#radio-button-3(type='radio', name='radio-button', value='3')
+                label(for='radio-button-3')
+                  span.frb-title Optimistic
+              .frb.frb-warning
+                input#radio-button-4(type='radio', name='radio-button', value='4')
+                label(for='radio-button-4')
+                  span.frb-title Calm
+              .frb.frb-danger
+                input#radio-button-5(type='radio', name='radio-button', value='5')
+                label(for='radio-button-5')
+                  span.frb-title Happy
+            .row.submit-button-div
+              .col-12
+                input.btn.btn--sub(type='submit', value='Submit')
+    // /.add entry
+
+    //
+      <section class="grid-container-div">
+      <h2 class="grid-h2">Your Grid:</h2>
+      <div class="container">
+      <div class="cell cell-1">1.</div>
+      <div class="cell cell-2">2.</div>
+      <div class="cell cell-3">3.</div>
+      <div class="cell cell-4">4.</div>
+      <div class="cell cell-5">5.</div>
+      <div class="cell cell-6">6.</div>
+      <div class="cell cell-7">7.</div>
+      <div class="cell cell-8">8.</div>
+      <div class="cell cell-9">9.</div>
+      <div class="cell cell-10">10.</div>
+      <div class="cell cell-11">11.</div>
+      <div class="cell cell-12">12.</div>
+      <div class="cell cell-13">13.</div>
+      <div class="cell cell-14">14.</div>
+      <div class="cell cell-15">15.</div>
+      <div class="cell cell-16">16.</div>
+      <div class="cell cell-17">17.</div>
+      <div class="cell cell-18">18.</div>
+      <div class="cell cell-19">19.</div>
+      <div class="cell cell-20">20.</div>
+      <div class="cell cell-21">21.</div>
+      <div class="cell cell-22">22.</div>
+      <div class="cell cell-33">23.</div>
+      <div class="cell cell-24">24.</div>
+      <div class="cell cell-25">25.</div>
+      <div class="cell cell-26">26.</div>
+      <div class="cell cell-27">27.</div>
+      <div class="cell cell-28">28.</div>
+      <div class="cell cell-29">29.</div>
+      <div class="cell cell-30">30.</div>
+      <div class="cell cell-31">31.</div>
+      </div>
+      </section>
+    //
+      
+  
