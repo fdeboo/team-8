@@ -23,9 +23,12 @@
   },
   "homepage": "https://github.com/RiyadhKh4n/team-8#readme",
   "dependencies": {
+    "axios": "^0.25.0",
     "bcryptjs": "^2.4.3",
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
+    "express-openid-connect": "^2.5.2",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.8",
     "nodemon": "^2.0.15",
     "validator": "^13.7.0"

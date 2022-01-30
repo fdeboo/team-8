@@ -1,6 +1,9 @@
 const express = require("express");
 const path = require("path");
-const User = require("./models/userModel");
+
+const userRouter = require("./routes/userRoutes");
+const viewRouter = require("./routes/viewRoutes");
+const { auth } = require("express-openid-connect");
 
 const app = express();
 
@@ -8,37 +11,32 @@ const app = express();
 app.use(express.json({ limit: "10kb" }));
 app.use(express.urlencoded({ extended: true, limit: "10kb" }));
 
+// // OPEN AUTH
+// app.use(
+//   auth({
+//     issuerBaseURL: process.env.ISSUER_BASE_URL,
+//     baseURL: process.env.BASE_URL,
+//     clientID: process.env.CLIENT_ID,
+//     secret: process.env.SECRET,
+//   })
+// );
+
 // Serve static files
 app.use(express.static(path.join(__dirname, "public")));
 
-// ROUTES:
-app.post("/api/v1/signup", async (req, res) => {
-  console.log(req.body);
-  try {
-    const newUser = await User.create({
-      name: req.body.name,
-      email: req.body.email,
+// ROUTES
+app.use("/api/v1/", userRouter);
+app.use("/", viewRouter);
 
-      password: req.body.password,
-      passwordConfirm: req.body.passwordConfirm,
-    });
+// GLOBAL ERRORS
+app.use((err, req, res, next) => {
+  err.statusCode = err.statusCode || 500;
+  err.status = err.status || "error";
 
-    res.status(201).json({
-      status: "success",
-      data: {
-        user: newUser,
-      },
-    });
-  } catch (err) {
-    res.status(400).json({
-      status: "fail",
-      message: err,
-    });
-  }
-});
-
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "/index.html"));
+  res.status(err.statusCode).json({
+    status: err.status,
+    message: err.message,
+  });
 });
 
 module.exports = app;
