@@ -41,9 +41,9 @@ And example of how the grid will look after serveral uses can be seen below:
 
 4. As a user, I can navigate the website with ease, so I am able to find everything
 
-5. ...
+5. As a user, I can login to my account, so I can add my daily entry
 
-6. ...
+6. As a user, I can create an account, so I can begin adding to my entries
 
 * ## Development Method 
 
@@ -59,23 +59,9 @@ And example of how the grid will look after serveral uses can be seen below:
 
 ### Workle Wireframes:
 
-![LandingPage]()
+![LandingPage](assets/images/workle1.png)
 
-![AdvicePage]()
-
-## Design 
-
-
-# Features 
-
-Here describes the main features of the website and what the user can expect when viewing ~
-
-## Existing Features:
-
-
-
-## Future Features:
-
+![AdvicePage](assets/images/advice1.png)
 
 # Technologies 
 ## Languages Used
@@ -120,29 +106,29 @@ Here describes the main features of the website and what the user can expect whe
 11. [Flask](https://flask.palletsprojects.com/en/2.0.x/)
     * Flask is a micro web framework writtin in Python
 
-# Testing 
+12. [jQuery](https://jquery.com/)
+    * Used to create the login / signup page logic
 
-All testing for Workle can be seen in [TESTING.md](TESTING.md)
-
-[Link To Testing.md](TESTING.md)
+13. [mongoDB](https://www.mongodb.com/)
+    * Used as the database
    
 # Deployment 
 
 ## Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository]()
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/RiyadhKh4n/team-8)
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
-    $ `git clone ` 
+    $ `git clone https://github.com/RiyadhKh4n/team-8.git ` 
 
 7. Press Enter. Your local clone will be created. 
 
 ```shell
-$ git clone 
+$ git clone https://github.com/RiyadhKh4n/team-8.git
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
@@ -152,15 +138,17 @@ $ git clone
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)]()
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/RiyadhKh4n/team-8)
 
 
 # Credits 
+Content for the site was taken from:
 
+* [YoungMinds](https://www.youngminds.org.uk/#main-content)
+* [Mindful](https://www.mindful.org/meditation/mindfulness-getting-started/)
+* [MentalHealth](https://www.mentalhealth.org.uk/a-to-z/s/stress#:~:text=Stress%20is%20the%20feeling%20of,with%20mental%20or%20emotional%20pressure.)
+* [inside.ewu](https://inside.ewu.edu/calelearning/psychological-skills/preventing-burnout/)
 
-## Code
-
-### Acknowledgements
 
 
 
