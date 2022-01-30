@@ -1,24 +1,232 @@
 /* File path: /workspace/team-8/assets/css/advice.css  */
 
 /* Two fonts  namely Robota Sans and Exo with different weights */
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+/*  Set all margins, paddings, baordrs to 0 to begin with setting up our page. */
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+/*-------------------------------------------------------------- Haeder-Font-style  */
+
+body{
+    font-family: Lato, Verdana, sans-serif;
+    font-weight: 300;
+    color: #3a3a3a;
+}
+
+h1 {
+    font-family:'Open Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #252525;
+    display: inline-block;
+}
+
+#logo{
+    float: left;
+    font-size: 280%;
+}
+
+#menu{
+    font-size: 110%;
+    list-style-type: none;
+    letter-spacing: 4px;
+}
+
+#menu .list-inline-item {
+    float: right;
+    margin-right: 20px;
+}
+
+
+
+h2 {
+    font-family:'Open Sans', Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
+    display:block;
+    width:max-content;
+    max-height: max-content;
+}
 
 /*----------------------------------------------------------------Color--*/
 
+body {
+    background-color: #1aa095;
+}
 
-/*--------------------------------------------------------------------- Special paddings/margins/texts */
+.bg-color-h-1 {
+
+    color: rgba(175, 53, 110, 0.664);
+}
+
+#menu a{
+    text-decoration: none;
+    color:inherit;
+}
+
+/*---------------------------------------------------------------- Heading line  section --*/
+
+#logo, #menu{
+    line-height: 75px;
+}
+
+/*----------------------------------------------------------------  Mindfulness  section --*/
+
+#mindfullness {
+    height: 600px;
+    width: 100%;
+}
+
+
+/*----------------------------------------------------------------  Stress  section  --*/
+
+#stress {
+    height: 600px;
+    width: 100%;
+}
+
+/*----------------------------------------------------------------  Burnout section  --*/
+
+#Burnout {
+    height: 600px;
+    width: 100%;
+}
+
+/*----------------------------------------------------------------  Footer section --*/
+
+#footer{
+    height: 200px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.topic-1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+#what-mind {
+    min-width: min-content;
+    min-height: min-content;
+    margin-left: 15px;
+    padding-left: 50px;
+}
+/*-------------------------------------------------------------- Heading  */
+
+
+
+
+/*-------------------------------------------------------------- Body   */
+
+/*
+body {
+    background:
+       #fafafa                     /* background-color */
+ /*      url(sunset.jpg)          /* background-image */
+/*     top center / 200px 200px /* background-position / background-size */
+ /*      no-repeat                /* background-repeat */
+ /*      fixed;                   /* background-attachment */
+ /* }
+
+
+
+/*
+.left-about-heading{
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 33%;
+    float: left;
+    position: relative;
+}
+
+.right-about-heading {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 33%;
+    float: right;
+    position: relative;
+    left: -300px;
+    display: table-cell;
+    
+}
+
+.center-about {
+    width: 33%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0;
+}
+
+P {
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #252525;
+    height: 30%;
+    min-width: min-content;
+    display:inline-block;
+    overflow: scroll;
+    position: relative;
+}
+
 
 
 
 /*-------------------------------------------------------------- Heading  */
 
-/*  Set all margins to 0 to begin with setting up our page. */
 
-header {
-    margin: 0;
-}
+/*--------------------------------------------------------------------- Special paddings/margins/texts */
+
 
 /* link logo to the images directory and its photo*/
+
+
 
 
 /*----------------------------------------------------------------Hover.css--*/
@@ -34,7 +242,7 @@ header {
 
 
 
-/*--------------------------------------------------------------    Stess */
+/*--------------------------------------------------------------    Stress */
 
 
 
