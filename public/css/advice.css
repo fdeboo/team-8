@@ -101,6 +101,9 @@ footer{
     font-size: 16px;
 }
 
+.footer-links{
+    display: flex;
+}
 footer ul{
     margin:0;
     list-style-type: none;  
@@ -109,7 +112,8 @@ footer ul{
 }
 
 ul li a{
-    color: black;
+    color: rgba(255,255,255,.85);
+    text-decoration: underline;
 }
 
 /*----------------------------------------------------------- .content */
@@ -129,13 +133,24 @@ ul li a{
     margin: 1rem 0;
 }
 
+.two-col-width h2, 
+#center-table h2{
+    border:1px solid black;
+}
+
+.stress-section{
+    padding: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+
+
+
 
 /*--------------------------------------------------------------  Mindfulness */
 
-
-    .mindfulness h2{
-        border: 1px solid black;
-    }
 
 /*--------------------------------------------------------------    Stess */
 
@@ -164,9 +179,12 @@ ul li a{
         width:400px;
         }
 
-    .two-col-width h2{
-        height: 60px;
-    }    
+    .two-col-width h2,
+    #center-table h2{
+        height: 80px;
+        vertical-align: middle;
+        line-height: 80px;
+            }    
 
     #center{
         display: flex;
