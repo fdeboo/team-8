@@ -311,6 +311,12 @@ body {
     height: 4rem;
 }
 
+/* Hero */
+
+
+
+
+
 @media (min-width: 320px) {
     .cards { grid-template-columns: repeat(7, 1fr); }
   }
