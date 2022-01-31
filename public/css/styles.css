@@ -128,8 +128,9 @@ footer {
 }
 
 .p-6 {
-    padding: 2rem;
+    padding: 4rem;
 }
+
 
 /* Jumbotron */
 .jumbotron{
@@ -213,8 +214,13 @@ footer {
     justify-content: center;
 }
 
+.form--auth {
+    min-height:30rem;
+}
+
 .details{
     background: rgba(93, 63, 211, 1);
+
 }
 
 .details h1{
@@ -453,6 +459,50 @@ input:focus{
     color: white;
     padding: 1rem;
     height: 4rem;
+}
+
+/* Hero */
+
+#hero-outer {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-inner{
+    background: rgba(93, 63, 211, 0.85);
+}
+
+.why-not-join{
+    padding-top: 1em;
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    color:white;
+}
+
+.overview-pug{
+    padding-top: 1em;
+    color:#fff;
+}
+
+.w-i-w-f-a{
+    color:#fff;
+}
+
+.workle-desc{
+    padding: 15px;
+    color:white;
+    padding-bottom: 50px;
+}
+
+.join-community{
+    text-align: center;
+}
+
+.button-advice{
+    text-align: center;
 }
 
 @media (min-width: 320px) {
