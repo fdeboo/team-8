@@ -71,14 +71,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 500ms;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.overlay:target{
-    opacity: 1;
-    visibility: visible;
 }
 
 .wrapper{
@@ -86,6 +78,13 @@ body {
     width:50%;
     min-height:400px;
     display:flex;
+}
+
+.login-col{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .close{

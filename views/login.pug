@@ -3,19 +3,22 @@ html
   body
     #popup.overlay
       .wrapper
-        a.close(href='') &times;
-        .column.details
-          .signin
-            form#loginForm
-              h1.h1-login Sign In
-              input(type='emial', placeholder='Username')
-              input(type='password', placeholder='Password')
-              button.form-submit(type='submit') Sign In
-              span.extra-info
-                | You don&apos;t have an account yet?
-                a#signup(href='/signup') Create it Now!
-        .column.content
-          .signin
-            h1.h1-login Welcome Back!
-            p.enter-details-p To add your next entry please login with your details
-    
+        .container
+          .row 
+            .col.login-col 
+              a.close(href='') &times;
+              .column.details
+                .signin
+                  form#loginForm
+                    h1.h1-login Sign In
+                    input(type='emial', placeholder='Username')
+                    input(type='password', placeholder='Password')
+                    button.form-submit(type='submit') Sign In
+                    span.extra-info
+                      | You don&apos;t have an account yet?
+                      a#signup(href='/signup') Create it Now!
+              .column.content
+                .signin
+                  h1.h1-login Welcome Back!
+                  p.enter-details-p To add your next entry please login with your details
+          
