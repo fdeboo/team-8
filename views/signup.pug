@@ -1,24 +1,24 @@
 extends base
 
 block content
-    #popup.overlay
-      .wrapper
-        .container
+  section.container-fluid.my-4
+    .row.justify-content-center
+      .col-12.col-md-8.how-feeling-div.pb-3
+        .container-fluid.my-4
           .row
-            .col.login-col 
-              a.close(href='') &times;
-              .column.details
-                .signup
-                  form.form--signup
-                    h1.h1-login Sign Up
-                    input#signup-name(type='name', placeholder='Username')
-                    input#signup-email(type='email', placeholder='Email')
-                    input#signup-password(type='password', placeholder='Password')
-                    input#signup-password-confirm(type='password', placeholder='Password')
-                    button.form-submit(type='submit') Sign Up
-                    span.extra-info Already have an account?
-                      a#signin(href='/login') Sign In
-              .column.content
-                .signup
-                  h1 Hello, Friend!
-                  p.enter-details-p Create an account to begin your journey with Workle
+            .col-6.d-flex.justify-content-center.flex-column.details.p-4
+              .signup
+                form.form--signup
+                  h1.h1-login Sign Up
+                  input#signup-name(type='name', placeholder='Username')
+                  input#signup-email(type='email', placeholder='Email')
+                  input#signup-password(type='password', placeholder='Password')
+                  input#signup-password-confirm(type='password', placeholder='Password')
+                  button.form-submit.pb-3(type='submit') Sign Up
+                  br
+                  span.mt-3.extra-info Already have an account? 
+                    a#signin(href='/login') Sign In
+            .col-6.d-flex.justify-content-center.flex-column.content
+              .signup
+                h1 Hello, Friend!
+                p.enter-details-p Create an account to begin your journey with Workle
