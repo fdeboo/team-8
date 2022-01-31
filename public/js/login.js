@@ -1,4 +1,8 @@
+import axios from "axios";
+// import { showAlert } from './alerts';
+
 export const login = async (email, password) => {
+  console.log(email, password);
   try {
     const res = await axios({
       method: "POST",
@@ -9,24 +13,47 @@ export const login = async (email, password) => {
       },
     });
 
-    if (res.data.status === "success") {
-      showAlert("success", "Logged in successfully!");
+    console.log(res);
 
-      const { user } = res.data.data;
+    if (res.data.status === "success") {
+      //   showAlert("success", "Logged in successfully!");
+
+      //   const { user } = res.data.data;
+      console.log("SUCCESSFUL");
 
       window.setTimeout(() => {
-        location.assign(`/${user._id}`);
+        location.assign(`/`);
       }, 1500);
     }
   } catch (err) {
-    showAlert("error", err.response.data.message);
+    console.log("error", err.response.data);
+    // showAlert("error", err.response.data.message);
   }
 };
 
-document.querySelector(".login-form").addEventListener("submit", (ev) => {
-  ev.preventDefault();
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-  console.log(email);
-  login(email, password);
-});
+export const signup = async (userData) => {
+  console.log(userData);
+
+  try {
+    console.log(userData);
+    const res = await axios({
+      method: "POST",
+      url: "http://127.0.0.1:3000/api/v1/signup",
+      data: userData,
+    });
+
+    console.log(res);
+
+    if (res.data.status === "success") {
+      // showAlert("success", "Logged in successfully!");
+      console.log("success", "Logged in successfully!");
+
+      window.setTimeout(() => {
+        location.assign("/");
+      }, 1500);
+    }
+  } catch (err) {
+    console.log("error", err.response.data.message);
+    // showAlert("error", err.response.data.message);
+  }
+};
