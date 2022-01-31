@@ -1,5 +1,4 @@
-// import axios from "axios";
-
+import "@babel/polyfill";
 import { login, logout } from "./login";
 // import { hideAlert, showAlert } from './alerts';
 
