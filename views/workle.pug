@@ -1,100 +1,78 @@
 extends base
 
 block content
-  html
-  head
-  body
-    section.jumbotron
-      h2.what-is-workle What is Workle?
-      p.workle-description
-        | Workle is a site where you can track how you feel on a daily basis.
-        | Come back everyday and chose a colour which best represents your overall emotion/feeling for the day
-        | and add a comment describing how your day was and any potential reasons for feeling this way.
-        | Over time this grid will build out and allow you to see your day to day emotions helping to monitor stress levels and overall mantal wellbeing.
-        | Workle also has a page dedicated to explaining and helping you understand the complex world of mental wellbeing.
-      h2.who-is-workle-for Who is Workle For?
-      p.workle-description-centre
-        | Workle is for everyone! No matter your age keeping track of your mental wellbeing is vital to a successful and fufilling life,
-        | so whether your a teenager dealing with school stress or and adult trying to manage your work/life balance Workle is for you.
-      section.d-md-none
-        hr.my-4
-        p
-          | So what are you waiting for? Sign Up and start you journey for a more peaceful life now!
-        p.second-signup-button
-          a.btn.btn--cta.btn--jumbo(href='#popup') Sign In / Sign Up
-    // /.jumbotron
-    // Add Entry
-    section.container-fluid.emotion-section
-      .row
-        .col-12.how-feeling-div
-          h2.how-are-you-feeling How Are You Feeling Today?
-      form#emotion-form
-        div
-          .frb-group
-            .frb.frb-angry
-              input#radio-button-0(type='radio', name='radio-button', value='0')
-              label.labels(for='radio-button-0')
-                span.frb-title Angry
-            .frb.frb-stressed
-              input#radio-button-1(type='radio', name='radio-button', value='1')
-              label.labels(for='radio-button-1')
-                span.frb-title Stressed
-            .frb.frb-sad
-              input#radio-button-2(type='radio', name='radio-button', value='2')
-              label.labels(for='radio-button-2')
-                span.frb-title Sad
-            .frb.frb-optimistic
-              input#radio-button-3(type='radio', name='radio-button', value='3')
-              label.labels(for='radio-button-3')
-                span.frb-title Optimistic
-            .frb.frb-calm
-              input#radio-button-4(type='radio', name='radio-button', value='4')
-              label.labels(for='radio-button-4')
-                span.frb-title Calm
-            .frb.frb-happy
-              input#radio-button-5(type='radio', name='radio-button', value='5')
-              label.labels(for='radio-button-5')
-                span.frb-title Happy
-        .row.input-box
-          h2.col-12.comment-about-day Add A Comment About Your Day
-          .input-group.mb-3
-            input.form-control(type='text', placeholder='Comment', aria-label='Comment', aria-describedby='basic-addon1')
-        .row.submit-button-div
-          .col-12
-            input.btn.btn--sub(type='submit', value='Submit')
-    // Grid
-    section.css-grid-section
-      .grid-h1-div
+  section.container-fluid.emotion-section.jumbotron.p-6
+    .row.justify-content-center
+      .col-12.col-md-8.how-feeling-div.pb-3
+        h2.how-are-you-feeling How Are You Feeling Today?
+        form.form--workle
+          div
+            .frb-group
+              .frb.frb-angry
+                input#radio-button-0(type='radio', name='emotion', value='0')
+                label.labels(for='radio-button-0')
+                  span.frb-title Angry
+              .frb.frb-stressed
+                input#radio-button-1(type='radio', name='emotion', value='1')
+                label.labels(for='radio-button-1')
+                  span.frb-title Stressed
+              .frb.frb-sad
+                input#radio-button-2(type='radio', name='emotion', value='2')
+                label.labels(for='radio-button-2')
+                  span.frb-title Sad
+              .frb.frb-optimistic
+                input#radio-button-3(type='radio', name='emotion', value='3')
+                label.labels(for='radio-button-3')
+                  span.frb-title Optimistic
+              .frb.frb-calm
+                input#radio-button-4(type='radio', name='emotion', value='4')
+                label.labels(for='radio-button-4')
+                  span.frb-title Calm
+              .frb.frb-happy
+                input#radio-button-5(type='radio', name='radio-button', value='5')
+                label.labels(for='radio-button-5')
+                  span.frb-title Happy
+          .row.input-box
+            h2.col-12.comment-about-day Add A Comment About Your Day
+            .input-group.mb-3
+              input#comment.form-control(type='text', placeholder='Comment', aria-label='Comment', aria-describedby='basic-addon1')
+          .row.submit-button-div
+            .col-12
+              input.btn.btn--sub(type='submit')
+  // Grid
+  section.css-grid-section.container-fluid.p-6
+    .row.justify-content-center
+      .col-12.col-md-8.how-feeling-div
         h1.grid-title Emotion Grid
-      .cards
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
-        .card
+        .cards
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card
+          .card

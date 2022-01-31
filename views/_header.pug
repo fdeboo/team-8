@@ -1,22 +1,22 @@
 html
   head
   body
-    | nav class=&quot;navbar navbar-dark navbar-expand-sm&quot;&gt;
-    a.navbar-brand(href='/')
-      | Workle
-    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-      span.navbar-toggler-icon
-    #navbarSupportedContent.collapse.navbar-collapse
-      ul.navbar-nav.mr-auto
-        li.nav-item
-          a.nav-link(href='#')
-            | Home
-            span.sr-only (current)
-        li.nav-item
-          a.nav-link(href='#') Advice
-        li.nav-item.mr-2.d-block.d-sm-none
-          a.nav-link(href='/login') Sign In / Sign Up
-    .secondary-nav-div.d-none.d-md-block
-      p.navbar-text.d-md-none.d-lg-inline
-        i Track and Manage Your Feelings
-      a.btn.btn--cta.btn--nav(href='/login') Sign In / Sign Up
+    nav.navbar.navbar-dark.navbar-expand-sm
+      a.navbar-brand(href='/')
+        | Workle
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href='#')
+              | Home
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='/advice') Advice
+          li.nav-item.mr-2.d-block.d-sm-none
+            a.nav-link(href='/login') Sign In / Sign Up
+      .secondary-nav-div.d-none.d-md-block
+        p.navbar-text.d-md-none.d-lg-inline
+          i Track and Manage Your Feelings
+        a.btn.btn--cta.btn--nav(href='/login') Sign In / Sign Up
