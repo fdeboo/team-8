@@ -165,6 +165,11 @@ exports.isLoggedIn = async (req, res, next) => {
       }
 
       res.locals.user = currentUser;
+
+      if (req.url !== "/") {
+        return next();
+      }
+
       return res.redirect("/me");
     } catch (err) {
       return next();

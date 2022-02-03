@@ -7,11 +7,11 @@ exports.getOverview = async (req, res, next) => {
 };
 
 exports.getLoginForm = async (req, res, next) => {
-  res.status(200).render("login", {});
+  res.status(200).render("login", { user: res.locals.user });
 };
 
 exports.getSignupForm = async (req, res, next) => {
-  res.status(200).render("signup", {});
+  res.status(200).render("signup", { user: res.locals.user });
 };
 
 exports.getUserHome = async (req, res, next) => {
@@ -19,5 +19,5 @@ exports.getUserHome = async (req, res, next) => {
 };
 
 exports.getAdvice = async (req, res, next) => {
-  res.status(200).render("advice.pug", {});
+  res.status(200).render("advice.pug", { user: res.locals.user });
 };
