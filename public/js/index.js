@@ -1,11 +1,11 @@
 import "@babel/polyfill";
-import { login, signup } from "./login";
+import { login, logout, signup } from "./login";
 // import { hideAlert, showAlert } from './alerts';
 
 const loginForm = document.querySelector(".form--login");
 const signupForm = document.querySelector(".form--signup");
 const workleForm = document.querySelector(".form--workle");
-console.log(workleForm);
+const logoutBtn = document.querySelector(".logout");
 
 if (loginForm) {
   loginForm.addEventListener("submit", (ev) => {
@@ -42,12 +42,9 @@ if (workleForm) {
     ev.preventDefault();
     const radioInputs = document.getElementsByName("emotion");
     let selectedEmotion;
-    console.log(radioInputs);
-
-    for (let i = 0; i < radioInputs.length; i++) {
-      console.log(radioInputs[i]);
-      if (radioInputs[i].checked) {
-        selectedEmotion = radioInputs[i];
+    for (const radioInput of radioInputs) {
+      if (radioInput.checked) {
+        selectedEmotion = radioInputs.value;
       }
     }
 
@@ -55,17 +52,7 @@ if (workleForm) {
 
     const emotion = document.getElementById("email").value;
     const comment = document.getElementById("comment").value;
-    // login(email, comment);
   });
 }
 
-// document.querySelector(".signup").addEventListener("click", () => {
-//   console.log("clicked Signup");
-//   const userData = {
-//     name: "Scooby",
-//     email: "melvindoo@mysteryinc.io",
-//     password: "password9389",
-//     passwordConfirm: "password9389",
-//   };
-//   signup(userData);
-// });
+if (logoutBtn) logoutBtn.addEventListener("click", logout);

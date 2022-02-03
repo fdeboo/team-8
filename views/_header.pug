@@ -9,14 +9,19 @@ html
       #navbarSupportedContent.collapse.navbar-collapse
         ul.navbar-nav.mr-auto
           li.nav-item
-            a.nav-link(href='#')
+            a.nav-link(href='/')
               | Home
               span.sr-only (current)
           li.nav-item
             a.nav-link(href='/advice') Advice
           li.nav-item.mr-2.d-block.d-sm-none
             a.nav-link(href='/login') Sign In / Sign Up
+          li.nav-item.mr-2.d-block.d-sm-none
+            a.nav-link(href='/login') Logout
       .secondary-nav-div.d-none.d-md-block
         p.navbar-text.d-md-none.d-lg-inline
           i Track and Manage Your Feelings
-        a.btn.btn--cta.btn--nav(href='/login') Sign In / Sign Up
+        if user
+          a.logout.btn.btn--cta.btn--nav(href='/') Logout
+        else
+          a.btn.btn--cta.btn--nav(href='/login') Sign In / Sign Up
