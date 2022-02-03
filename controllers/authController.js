@@ -81,6 +81,14 @@ exports.login = catchAsync(async (req, res, next) => {
   });
 });
 
+exports.logout = (req, res, next) => {
+  res.cookie("jwt", "loggedout", {
+    expires: new Date(Date.now() + 10 * 1000),
+    httpOnly: true,
+  });
+  res.status(200).json({ status: "success" });
+};
+
 exports.protect = catchAsync(async (req, res, next) => {
   let token;
   if (
@@ -130,13 +138,12 @@ exports.protect = catchAsync(async (req, res, next) => {
     return next(err);
   }
 
-  req.user = currentUser;
+  // req.user = currentUser;
   res.locals.user = currentUser;
   next();
 });
 
 exports.isLoggedIn = async (req, res, next) => {
-  console.log(req.cookies.jwt);
   if (req.cookies.jwt) {
     try {
       const decodedPayload = await promisify(jwt.verify)(
@@ -158,8 +165,7 @@ exports.isLoggedIn = async (req, res, next) => {
       }
 
       res.locals.user = currentUser;
-      console.log("HERE");
-      res.redirect("/me");
+      return res.redirect("/me");
     } catch (err) {
       return next();
     }

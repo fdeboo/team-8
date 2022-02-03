@@ -21,5 +21,7 @@ html
       .secondary-nav-div.d-none.d-md-block
         p.navbar-text.d-md-none.d-lg-inline
           i Track and Manage Your Feelings
-        a.btn.btn--cta.btn--nav(href='/login') Sign In / Sign Up
-        a.logout.btn.btn--cta.btn--nav(href='/') Logout
+        if user
+          a.logout.btn.btn--cta.btn--nav(href='/') Logout
+        else
+          a.btn.btn--cta.btn--nav(href='/login') Sign In / Sign Up

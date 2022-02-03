@@ -19,6 +19,8 @@ body {
 
 footer {
     flex-shrink: 0;
+    background-color: #66BAA8;
+    color: #fff;
 }
 
 /* Navbar */
